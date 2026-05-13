@@ -1,37 +1,89 @@
 {
   "$schema": "https://mintlify.com/docs.json",
-  "theme": "almond",
-  "name": "Key Nine Studios Help Center",
-  "description": "Setup guides, product how-tos, automation tips, and support policies for Key Nine Studios.",
+  "theme": "aspen",
+  "name": "Keynine Studios",
   "colors": {
-    "primary": "#166E3F",
-    "light": "#26BD6C",
-    "dark": "#166E3F"
+    "primary": "#9333EA",
+    "light": "#C084FC",
+    "dark": "#7C3AED"
   },
-  "favicon": "https://icons.duckduckgo.com/ip3/getsupport.keyninestudios.com.ico",
-  "icons": {
-    "library": "lucide"
-  },
-  "styling": {
-    "eyebrows": "breadcrumbs"
-  },
-  "contextual": {
-    "options": ["copy", "view", "assistant", "mcp", "add-mcp"]
+  "favicon": "/icons/favicon.ico",
+  "appearance": {
+    "default": "dark",
+    "strict": true
   },
   "navigation": {
-    "directory": "card",
-    "products": [
+    "tabs": [
       {
-        "product": "Top 10",
-        "tabs": [
+        "tab": "Welcome!",
+        "groups": [
           {
-            "tab": "Help Center",
-            "groups": [
-              {
-                "group": "Get Started",
-                "icon": "rocket",
-                "pages": []
-              }
+            "group": "Getting Started",
+            "pages": ["index"]
+          }
+        ]
+      },
+      {
+        "tab": "Top 10!",
+        "groups": [
+          {
+            "group": "General Support",
+            "pages": [
+              "topten/guides/how-to-create-an-account",
+              "topten/guides/how-to-take-upload-a-picture",
+              "topten/guides/how-to-create-a-friend-request",
+              "topten/guides/how-to-accept-deny-a-friend-request",
+              "topten/guides/how-to-remove-delete-a-friend",
+              "topten/guides/how-to-block-a-user",
+              "topten/guides/how-to-change-your-username",
+              "topten/guides/how-to-edit-add-your-profile-picture",
+              "topten/guides/how-to-create-add-a-new-location",
+              "topten/guides/how-to-view-the-leaderboard",
+              "topten/guides/how-to-view-your-badges",
+              "topten/guides/how-to-add-remove-a-reaction-from-a-post",
+              "topten/guides/how-to-appeal-a-ban",
+              "topten/guides/our-policies"
+            ]
+          },
+          {
+            "group": "Premium Features",
+            "pages": [
+              "topten/premium/how-to-upgrade-to-pro",
+              "topten/premium/active-list-of-premium-features",
+              "topten/premium/discounts-for-top-10-pro",
+              "topten/premium/how-to-redeem-a-premium-code",
+              "topten/premium/how-to-redeem-a-premium-code-via-link",
+              "topten/premium/how-to-participate-in-an-event",
+              "topten/premium/event-dates"
+            ]
+          },
+          {
+            "group": "Advanced Features",
+            "pages": [
+              "topten/guides/how-to-get-ai-suggestions",
+              "topten/guides/check-the-status-of-a-keynine-service",
+              "topten/guides/how-to-add-remove-filters-from-the-friends-feed"
+
+            ]
+          },
+          {
+            "group": "Other",
+            "pages": [
+              "topten/misc/known-issues",
+              "topten/misc/outdated-coming-articles"
+            ]
+          }
+        ]
+      },
+      {
+        "tab": "Change Logs",
+        "groups": [
+          {
+            "group": "Top 10",
+            "pages": [
+              "changelog/1-2",
+              "changelog/1-2-5",
+              "changelog/2-0"
             ]
           }
         ]
@@ -39,20 +91,36 @@
     ]
   },
   "logo": {
-    "light": "https://media.brand.dev/b0ad5309-4c58-4f10-80ce-9da45b51c612.svg",
-    "dark": "https://media.brand.dev/b0ad5309-4c58-4f10-80ce-9da45b51c612.svg"
+    "light": "/icons/logo.png",
+    "dark": "/icons/logo.png",
+    "height": 40
   },
   "navbar": {
     "links": [
       {
-        "label": "Contact support",
-        "href": "/support/contact-support"
+        "label": "System Status",
+        "href": "https://keyninestudios.statuspage.io/"
+      },
+      {
+        "label": "Merch Store!",
+        "href": "https://forthemassesprinting.printful.me/"
+      },
+      {
+        "label": "Privacy Policy",
+        "href": "https://topten.keyninestudios.com/privacy.html"
       }
     ],
     "primary": {
       "type": "button",
-      "label": "Go to app",
-      "href": "https://getsupport.keyninestudios.com"
+      "label": "Download",
+      "href": "https://apps.apple.com/app/keynine"
+    }
+  },
+  "errors": {
+    "404": {
+      "redirect": false,
+      "title": " ",
+      "description": "This page doesn't exist."
     }
   }
 }
