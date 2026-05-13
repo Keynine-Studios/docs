@@ -20,38 +20,18 @@
   },
   "navigation": {
     "directory": "card",
-    "tabs": [
+    "products": [
       {
-        "tab": "Help Center",
-        "groups": [
+        "product": "Top 10",
+        "tabs": [
           {
-            "group": "Get Started",
-            "icon": "rocket",
-            "pages": [
-              "getting-started/index",
-              "getting-started/quickstart",
-              "getting-started/create-account",
-              "getting-started/sign-in-security"
-            ]
-          },
-          {
-            "group": "Workspace",
-            "icon": "users",
-            "pages": [
-              "getting-started/workspace/index",
-              "getting-started/workspace/invite-teammates",
-              "getting-started/workspace/roles-permissions",
-              "getting-started/workspace/organization-settings"
-            ]
-          },
-          {
-            "group": "Billing",
-            "icon": "credit-card",
-            "pages": [
-              "getting-started/billing/index",
-              "getting-started/billing/compare-plans",
-              "getting-started/billing/upgrade-downgrade",
-              "getting-started/billing/invoices-receipts"
+            "tab": "Help Center",
+            "groups": [
+              {
+                "group": "Get Started",
+                "icon": "rocket",
+                "pages": []
+              }
             ]
           }
         ]
