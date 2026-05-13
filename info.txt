@@ -1,1 +1,0 @@
-This file is only here to allow mintlify to pick up changes made to this repo!
