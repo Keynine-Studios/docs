@@ -1,0 +1,36 @@
+---
+title: "HubSpot Connector Setup and Configuration"
+sidebarTitle: "HubSpot"
+description: "Connect Key Nine Studios to HubSpot CRM for deal and company record sync, align pipeline stages, and manage OAuth scopes and API rate limits."
+---
+
+The Key Nine Studios HubSpot connector works best when marketing and sales already live in HubSpot—your workspace becomes the execution layer while HubSpot remains the system of record for pipeline stages and company attributes.
+
+## Connect HubSpot via OAuth
+
+<Steps>
+  <Step title="Open Integrations">
+    Navigate to **Integrations → Partner connectors → HubSpot**.
+  </Step>
+  <Step title="Authorize with HubSpot">
+    Click **Connect** and authorize with a HubSpot user account that can grant CRM scopes. Use a service account if your policy requires it.
+  </Step>
+  <Step title="Review scopes">
+    Confirm read vs write scopes against what your workflows actually need. Over-scoped tokens concern security reviewers during audits.
+  </Step>
+  <Step title="Align pipeline stages">
+    Map HubSpot deal stages to project states in Key Nine Studios for cleaner cross-tool reporting.
+  </Step>
+</Steps>
+
+<Tip>
+Maintain a shared glossary of stage names so dashboards match what revenue teams discuss on calls. Misaligned terminology surfaces in every pipeline review.
+</Tip>
+
+## Manage API rate limits
+
+Watch HubSpot API rate limits during large initial backfills. Throttle the first sync to avoid hitting limits during the critical early setup period.
+
+<Note>
+Use cursor-based API pagination where available—it is safer than offset-based paging on large datasets and avoids missed or duplicate records when data changes during a sync.
+</Note>

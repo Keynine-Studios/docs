@@ -1,0 +1,42 @@
+---
+title: "Build a Custom Connector from the Template"
+sidebarTitle: "Custom template"
+description: "Fork the Key Nine Studios connector template to build private integrations with auth scaffolding, webhook handlers, and test harnesses already set up."
+---
+
+The Key Nine Studios custom connector template encodes best practices that you would otherwise rebuild for every integration: structured logging, retry policies, authentication scaffolding, and test harnesses. Fork it when no partner connector fits your stack, then rename packages and remove sample data before any production credentials touch it.
+
+## What the template includes
+
+- **Authentication scaffolding** — Supports API key and OAuth flows out of the box
+- **Webhook handlers** — Pre-wired HMAC verification and response helpers
+- **Example tests** — Unit and integration test patterns for mappers and clients
+- **Observability hooks** — Structured logging with configurable verbosity levels
+
+Follow the included directory layout so future contributors know where to add mappers, API clients, and test fixtures.
+
+## Customize for your schema
+
+Replace the sample field mappings with your own schema and add monitoring for sync failures:
+
+<Steps>
+  <Step title="Fork the template">
+    Create a private fork of the connector template in your organization's version control system.
+  </Step>
+  <Step title="Rename packages">
+    Update package names and namespaces to match your organization's conventions. Remove all sample data.
+  </Step>
+  <Step title="Implement field mappings">
+    Replace sample mappers with your schema. Add transformation logic for any data that does not map 1:1.
+  </Step>
+  <Step title="Add observability">
+    Emit metrics for sync lag, error categories, and record counts. Dashboards beat log-grep when something breaks at 2 a.m.
+  </Step>
+  <Step title="Security review">
+    Schedule an architecture review before handling regulated data. Catch network paths and key storage issues early.
+  </Step>
+</Steps>
+
+<Warning>
+Delete all sample data and test credentials before your first production credential touches the connector. Review secrets handling in your CI/CD pipeline before merging.
+</Warning>

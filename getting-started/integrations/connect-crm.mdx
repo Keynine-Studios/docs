@@ -1,0 +1,30 @@
+---
+title: "Connect Your CRM to Key Nine Studios"
+sidebarTitle: "CRM"
+description: "Sync Salesforce or HubSpot with Key Nine Studios using partner connectors or a custom API-based strategy to keep customer context next to your team's work."
+---
+
+CRM integrations in Key Nine Studios keep customer context next to internal work without constant copy-paste. The hardest part is agreeing which system owns which field—settle that before you flip the sync on to avoid conflicts.
+
+## Choose a connection method
+
+<Tabs>
+  <Tab title="Partner connectors">
+    Use the official Salesforce or HubSpot partner connectors for the fastest setup. Connectors include pre-built field mappings and sane defaults. See the [partner connectors guide](/getting-started/integrations/partners) for step-by-step instructions.
+  </Tab>
+  <Tab title="Custom sync">
+    Use the Key Nine Studios API or webhook-based approach for unusual object models or complex transformations mid-pipeline. See the [developer integrations guide](/getting-started/integrations/developer) for API keys, OAuth, and webhook setup.
+  </Tab>
+</Tabs>
+
+## Define data ownership before syncing
+
+Before activating any sync, document which system wins when both sides have conflicting data for the same field.
+
+<Warning>
+Ambiguous conflict rules surface quickly when sales reassigns accounts during a territory change. Decide "CRM wins" or "Key Nine Studios wins" for every synced field before you go live.
+</Warning>
+
+## Manage privacy and retention
+
+Limit synced fields to the minimum your workflows require and review access regularly. Align deletion policies between systems: when a CRM record is deleted, decide whether related artifacts should archive, anonymize, or remain linked for audit purposes.

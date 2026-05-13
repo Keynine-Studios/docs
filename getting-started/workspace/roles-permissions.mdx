@@ -1,0 +1,38 @@
+---
+title: "Roles and Permissions in Key Nine Studios"
+sidebarTitle: "Roles & permissions"
+description: "Learn how Key Nine Studios roles control access: what admins and members can do, how custom roles work, and how to audit permission changes in your workspace."
+---
+
+Permissions in Key Nine Studios translate your organization's structure into enforceable access rules. When designing roles, mirror how your company already thinks about data classification—customer data vs internal-only vs public content—rather than copying org chart titles.
+
+## Default roles
+
+| Role | Typical use |
+|---|---|
+| **Admin** | Billing, security, SSO, workspace-wide settings |
+| **Member** | Day-to-day work inside assigned projects |
+
+### Keep the admin group small
+
+Too many admins increases the risk of accidental misconfiguration. Too few admins blocks urgent fixes during incidents. Aim for two to four named admins per organization with clear handoff when people are out.
+
+## Custom roles
+
+On supported plans, you can create roles that map to your internal job functions and restrict actions like data exports or automation configuration.
+
+<Tip>
+Name roles after outcomes rather than job titles. "Support – view only" is clearer than "Engineer" because job titles drift faster than actual access needs.
+</Tip>
+
+### Test before rollout
+
+Before deploying a new custom role broadly, test it with a sandbox user account. Verify that denied actions fail with a clear error message rather than silently succeeding or showing confusing UI states.
+
+## Audit access changes
+
+Admins can review a log of role changes and sensitive actions. Retention varies by plan—check your plan details for how long logs are available.
+
+### Schedule access reviews
+
+Run quarterly access reviews for high-sensitivity projects. Export logs before reviews if you need to cross-reference them with HR systems during offboarding.

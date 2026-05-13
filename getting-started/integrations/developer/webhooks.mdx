@@ -1,0 +1,63 @@
+---
+title: "Webhooks: Subscribe to Key Nine Studios Events"
+sidebarTitle: "Webhooks"
+description: "Subscribe to Key Nine Studios webhook events, verify HMAC signatures on every delivery, handle retries idempotently, and return the correct HTTP status codes."
+---
+
+Key Nine Studios webhooks push events to your infrastructure so you can react to changes without polling. Reliability hinges on three things: verifying signatures before processing, responding quickly, and handling retries idempotently. Treat your webhook endpoint like a mini product.
+
+## Create a webhook subscription
+
+<Steps>
+  <Step title="Open Webhooks settings">
+    Navigate to **Settings → Developer → Webhooks** and click **Add endpoint**.
+  </Step>
+  <Step title="Enter your endpoint URL">
+    Provide the HTTPS URL where Key Nine Studios should deliver events. Your server must be reachable from the internet.
+  </Step>
+  <Step title="Select event types">
+    Choose only the events your code handles. Unused event types still consume verification CPU and add noise to your logs.
+  </Step>
+  <Step title="Save and copy the signing secret">
+    Save the endpoint to receive your signing secret. Store it securely—you will use it to verify every incoming request.
+  </Step>
+</Steps>
+
+## Verify webhook signatures
+
+Always validate the HMAC signature on every incoming request before processing the payload.
+
+```typescript
+import crypto from "crypto";
+
+function verifySignature(
+  payload: string,
+  signature: string,
+  secret: string
+): boolean {
+  const expected = crypto
+    .createHmac("sha256", secret)
+    .update(payload)
+    .digest("hex");
+  return crypto.timingSafeEqual(
+    Buffer.from(signature),
+    Buffer.from(expected)
+  );
+}
+```
+
+<Warning>
+Reject requests with stale timestamps to prevent replay attacks. A five-minute tolerance window is a common industry standard.
+</Warning>
+
+## Handle retries correctly
+
+Key Nine Studios retries failed deliveries with exponential backoff. Design your endpoint to handle duplicate deliveries safely:
+
+- Return **2xx** only after you have safely persisted or handed off the work.
+- Return **5xx** to signal a transient failure worth retrying.
+- Return **4xx** for permanent misconfiguration (Key Nine Studios will not retry 4xx responses).
+
+<Tip>
+Use an idempotency key (such as a delivery ID from the webhook headers) to deduplicate retried events at your database layer.
+</Tip>

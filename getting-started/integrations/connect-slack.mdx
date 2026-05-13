@@ -1,0 +1,41 @@
+---
+title: "Connect Slack to Key Nine Studios"
+sidebarTitle: "Slack"
+description: "Install the Key Nine Studios Slack app, map events to channels, and manage notifications so your team gets timely updates without inbox overload."
+---
+
+The Key Nine Studios Slack integration puts updates where your team already works. A disciplined channel strategy keeps signal high—one noisy channel quickly trains everyone to mute the integration entirely.
+
+## Install the Slack app
+
+<Steps>
+  <Step title="Open Integrations settings">
+    Navigate to **Integrations → Slack** in your Key Nine Studios workspace.
+  </Step>
+  <Step title="Authorize your Slack workspace">
+    Click **Connect Slack** and authorize with the Slack workspace your team uses every day.
+  </Step>
+  <Step title="Review OAuth scopes">
+    Review the requested permissions during install. If any scope looks broader than your needs, ask your Slack admin whether a reduced configuration is available.
+  </Step>
+</Steps>
+
+<Note>
+You need Slack admin approval if your Slack organization restricts third-party app installs. Coordinate with your Slack admin before starting the connection.
+</Note>
+
+## Map events to channels
+
+After connecting, select which events post to which channels. Start with a low-traffic channel during your pilot so you can validate the signal before expanding.
+
+<Tip>
+Use a consistent prefix for related channels (`#k9-updates-`, `#k9-alerts-`) so people can browse related channels and archive pilot channels after go-live.
+</Tip>
+
+## Troubleshoot Slack notifications
+
+If notifications stop arriving:
+
+1. Reauthorize the Slack app from **Integrations → Slack → Reconnect**.
+2. Confirm the Key Nine Studios bot was not removed from the target channel.
+3. Check integration logs for `429` rate limit responses if you have high event volume—batch summaries or increase the notification interval.

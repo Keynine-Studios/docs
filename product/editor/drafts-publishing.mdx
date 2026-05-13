@@ -1,0 +1,43 @@
+---
+title: "Drafts and Publishing in Key Nine Studios"
+sidebarTitle: "Drafts & publishing"
+description: "Learn how draft states work in Key Nine Studios, what changes when you publish, how to schedule releases, and how to coordinate reviews before going live."
+---
+
+Drafts in Key Nine Studios let you iterate without exposing work-in-progress to every reader. Publishing turns a snapshot into what visitors and integrations see. This guide covers visibility rules, the publish action, and scheduled releases for coordinated launches.
+
+## Work in drafts
+
+Drafts are visible only to editors you invite. Unpublished changes never appear to read-only roles, which keeps reviews and experiments contained until you are confident the content is ready.
+
+### Autosave and conflicts
+
+Edits save automatically as you work. If two editors modify the same section simultaneously, you may see a merge prompt or last-write-wins behavior depending on your client. Coordinate on actively edited pages or assign a primary editor during high-stakes launches.
+
+## Publish content
+
+Publishing snapshots your current draft for readers and triggers any configured webhooks. Think of publish as a labeled release: SEO indexing, feeds, and automations typically key off the published revision, not every intermediate save.
+
+<Steps>
+  <Step title="Review before publishing">
+    Skim the title, metadata, and any embedded media. Run a quick link check on high-traffic pages. If you use an approval process, wait for the reviewer sign-off before publishing.
+  </Step>
+  <Step title="Publish the page">
+    Click **Publish** in the editor toolbar. The page becomes visible to readers immediately.
+  </Step>
+  <Step title="Verify downstream systems">
+    If you have webhooks configured, confirm they received the publish event. Treat duplicate deliveries as idempotent at your receiver.
+  </Step>
+</Steps>
+
+<Note>
+The prior published version remains in version history after you publish a new revision. You can roll back to it at any time without losing intermediate work.
+</Note>
+
+## Schedule a publish
+
+Schedule a future publish time when your team coordinates launches across time zones or content that must go live after a feature flag flips.
+
+<Tip>
+Pick a timezone that matches how your team communicates ("end of day PT") and confirm daylight-saving edge cases for global audiences. You can reschedule or cancel a queued publish until it actually runs.
+</Tip>
