@@ -8,6 +8,10 @@
     "dark": "#7C3AED"
   },
   "favicon": "/icons/favicon.ico",
+  "banner": {
+        "content": "🛠️ This documentation is still being ported over from our old server. Please be patient.",
+        "dismissible": true
+    },
   "appearance": {
     "default": "dark",
     "strict": true
