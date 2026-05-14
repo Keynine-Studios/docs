@@ -49,7 +49,8 @@
               "topten/guides/how-to-add-remove-a-reaction-from-a-post",
               "topten/guides/how-to-appeal-a-ban",
               "topten/guides/our-policies"
-            ]
+            ],
+            "icon": "circle-question"
           },
           {
             "group": "Premium Features",
@@ -61,7 +62,8 @@
               "topten/premium/how-to-redeem-a-premium-code-via-link",
               "topten/premium/how-to-participate-in-an-event",
               "topten/premium/event-dates"
-            ]
+            ],
+            "icon": "star"
           },
           {
             "group": "Advanced Features",
@@ -70,14 +72,16 @@
               "topten/guides/check-the-status-of-a-keynine-service",
               "topten/guides/how-to-add-remove-filters-from-the-friends-feed"
 
-            ]
+            ],
+            "icon": "code"
           },
           {
             "group": "Other",
             "pages": [
               "topten/misc/known-issues",
               "topten/misc/outdated-coming-articles"
-            ]
+            ],
+            "icon": "table"
           }
         ]
       },
@@ -92,7 +96,8 @@
               "changelog/2-0"
             ]
           }
-        ]
+        ],
+        "icon": "paperclip"
       }
     ]
   },
