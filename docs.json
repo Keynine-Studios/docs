@@ -23,7 +23,10 @@
         "groups": [
           {
             "group": "Getting Started",
-            "pages": ["index"]
+            "pages": [
+              "index",
+              "status"
+            ]
           }
         ]
       },
