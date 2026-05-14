@@ -24,8 +24,7 @@
           {
             "group": "Getting Started",
             "pages": [
-              "index",
-              "status"
+              "index"
             ]
           }
         ]
