@@ -26,6 +26,14 @@
             "pages": [
               "index"
             ]
+          },
+          {
+            "group": "Our Policies",
+            "icon": "book",
+            "pages": [
+              "terms-of-service",
+              "privacy-policy"
+            ]
           }
         ]
       },
