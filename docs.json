@@ -94,6 +94,17 @@
         ]
       },
       {
+        "tab": "Cents",
+        "groups": [
+          {
+            "group": "Coming Soon",
+            "pages": [
+              "cents/guides/welcome"
+            ]
+          }
+        ]
+      },
+      {
         "tab": "Change Logs",
         "groups": [
           {
