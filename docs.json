@@ -107,8 +107,16 @@
             "icon": "circle-question",
             "pages": [
               "how-to-change-your-username",
-              "how-to-start-a-lesson"
+              "how-to-start-a-lesson",
+              "start-a-review-session",
+              "how-to-access-the-handbook",
+              "how-to-buy-a-streak-freeze",
+              "types-of-excercises"
             ]
+          },
+          {
+            "group": "Resources",
+            "pages": []
           }
         ],
         "hidden": true
