@@ -118,7 +118,8 @@
             "group": "Resources",
             "pages": [
               "music-theory-handbook"
-            ]
+            ],
+            "icon": "clipboard-check"
           }
         ],
         "hidden": true
