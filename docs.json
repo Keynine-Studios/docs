@@ -116,7 +116,9 @@
           },
           {
             "group": "Resources",
-            "pages": []
+            "pages": [
+              "music-theory-handbook"
+            ]
           }
         ],
         "hidden": true
