@@ -101,6 +101,14 @@
             "pages": [
               "cents/guides/welcome"
             ]
+          },
+          {
+            "group": "General Support",
+            "icon": "circle-question",
+            "pages": [
+              "how-to-change-your-username",
+              "how-to-start-a-lesson"
+            ]
           }
         ],
         "hidden": true
