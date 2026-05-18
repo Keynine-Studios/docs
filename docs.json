@@ -106,6 +106,7 @@
             "group": "General Support",
             "icon": "circle-question",
             "pages": [
+              "sign-in-sign-up",
               "how-to-change-your-username",
               "how-to-start-a-lesson",
               "start-a-review-session",
