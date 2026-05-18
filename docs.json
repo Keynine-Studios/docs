@@ -17,124 +17,151 @@
     "strict": true
   },
   "navigation": {
-    "tabs": [
+    "dropdowns": [
       {
-        "tab": "Welcome!",
-        "groups": [
+        "dropdown": "Welcome!",
+        "tabs": [
           {
-            "group": "Getting Started",
-            "pages": [
-              "index"
+            "tab": "Welcome!",
+            "groups": [
+              {
+                "group": "Getting Started",
+                "pages": [
+                  "index"
+                ]
+              }
+            ]
+          },
+          {
+            "tab": "Change Logs",
+            "groups": [
+              {
+                "group": "Top 10",
+                "pages": [
+                  "changelog/1-2",
+                  "changelog/1-2-5",
+                  "changelog/2-0"
+                ]
+              }
             ]
           }
         ]
       },
       {
-        "tab": "Top 10!",
-        "groups": [
+        "dropdown": "Top 10!",
+        "color": {
+          "light": "#8315a3",
+          "dark": "#8315a3"
+        },
+        "tabs": [
           {
-            "group": "General Support",
-            "pages": [
-              "topten/guides/how-to-create-an-account",
-              "topten/guides/how-to-take-upload-a-picture",
-              "topten/guides/how-to-create-a-friend-request",
-              "topten/guides/how-to-accept-deny-a-friend-request",
-              "topten/guides/how-to-remove-delete-a-friend",
-              "topten/guides/how-to-block-a-user",
-              "topten/guides/how-to-change-your-username",
-              "topten/guides/how-to-edit-add-your-profile-picture",
-              "topten/guides/how-to-create-add-a-new-location",
-              "topten/guides/how-to-view-the-leaderboard",
-              "topten/guides/how-to-view-your-badges",
-              "topten/guides/how-to-add-remove-a-reaction-from-a-post",
-              "topten/guides/how-to-appeal-a-ban",
-              "topten/guides/our-policies"
-            ],
-            "icon": "circle-question"
-          },
-          {
-            "group": "Premium Features",
-            "pages": [
-              "topten/premium/how-to-upgrade-to-pro",
-              "topten/premium/active-list-of-premium-features",
-              "topten/premium/discounts-for-top-10-pro",
-              "topten/premium/how-to-redeem-a-premium-code",
-              "topten/premium/how-to-redeem-a-premium-code-via-link",
-              "topten/premium/how-to-participate-in-an-event",
-              "topten/premium/event-dates"
-            ],
-            "icon": "star"
-          },
-          {
-            "group": "Advanced Features",
-            "pages": [
-              "topten/guides/how-to-get-ai-suggestions",
-              "topten/guides/check-the-status-of-a-keynine-service",
-              "topten/guides/how-to-add-remove-filters-from-the-friends-feed"
-
-            ],
-            "icon": "code"
-          },
-          {
-            "group": "Our Policies",
-            "icon": "book",
-            "pages": [
-              "terms-of-service",
-              "privacy-policy"
+            "tab": "Support Center",
+            "groups": [
+              {
+                "group": "General Support",
+                "icon": "circle-question",
+                "pages": [
+                  "topten/guides/how-to-create-an-account",
+                  "topten/guides/how-to-take-upload-a-picture",
+                  "topten/guides/how-to-create-a-friend-request",
+                  "topten/guides/how-to-accept-deny-a-friend-request",
+                  "topten/guides/how-to-remove-delete-a-friend",
+                  "topten/guides/how-to-block-a-user",
+                  "topten/guides/how-to-change-your-username",
+                  "topten/guides/how-to-edit-add-your-profile-picture",
+                  "topten/guides/how-to-create-add-a-new-location",
+                  "topten/guides/how-to-view-the-leaderboard",
+                  "topten/guides/how-to-view-your-badges",
+                  "topten/guides/how-to-add-remove-a-reaction-from-a-post",
+                  "topten/guides/how-to-appeal-a-ban",
+                  "topten/guides/our-policies"
+                ]
+              },
+              {
+                "group": "Premium Features",
+                "icon": "star",
+                "pages": [
+                  "topten/premium/how-to-upgrade-to-pro",
+                  "topten/premium/active-list-of-premium-features",
+                  "topten/premium/discounts-for-top-10-pro",
+                  "topten/premium/how-to-redeem-a-premium-code",
+                  "topten/premium/how-to-redeem-a-premium-code-via-link",
+                  "topten/premium/how-to-participate-in-an-event",
+                  "topten/premium/event-dates"
+                ]
+              },
+              {
+                "group": "Advanced Features",
+                "icon": "code",
+                "pages": [
+                  "topten/guides/how-to-get-ai-suggestions",
+                  "topten/guides/check-the-status-of-a-keynine-service",
+                  "topten/guides/how-to-add-remove-filters-from-the-friends-feed"
+                ]
+              },
+              {
+                "group": "Our Policies",
+                "icon": "book",
+                "pages": [
+                  "terms-of-service",
+                  "privacy-policy"
+                ]
+              },
+              {
+                "group": "Other",
+                "icon": "table",
+                "pages": [
+                  "topten/misc/known-issues",
+                  "topten/misc/outdated-coming-articles"
+                ]
+              }
             ]
-          },
-          {
-            "group": "Other",
-            "pages": [
-              "topten/misc/known-issues",
-              "topten/misc/outdated-coming-articles"
-            ],
-            "icon": "table"
           }
         ]
       },
       {
-        "tab": "Cents",
-        "groups": [
+        "dropdown": "Cents",
+        "tabs": [
           {
-            "group": "Coming Soon",
-            "pages": [
-              "cents/guides/welcome"
+            "tab": "Support Center",
+            "hidden": true,
+            "groups": [
+              {
+                "group": "Coming Soon",
+                "pages": [
+                  "cents/guides/welcome"
+                ]
+              },
+              {
+                "group": "General Support",
+                "icon": "circle-question",
+                "pages": [
+                  "sign-in-sign-up",
+                  "how-to-change-your-username",
+                  "how-to-start-a-lesson",
+                  "start-a-review-session",
+                  "how-to-access-the-handbook",
+                  "how-to-buy-a-streak-freeze",
+                  "types-of-excercises"
+                ]
+              },
+              {
+                "group": "Resources",
+                "icon": "clipboard-check",
+                "pages": [
+                  "music-theory-handbook"
+                ]
+              }
             ]
-          },
-          {
-            "group": "General Support",
-            "icon": "circle-question",
-            "pages": [
-              "sign-in-sign-up",
-              "how-to-change-your-username",
-              "how-to-start-a-lesson",
-              "start-a-review-session",
-              "how-to-access-the-handbook",
-              "how-to-buy-a-streak-freeze",
-              "types-of-excercises"
-            ]
-          },
-          {
-            "group": "Resources",
-            "pages": [
-              "music-theory-handbook"
-            ],
-            "icon": "clipboard-check"
           }
-        ],
-        "hidden": true
+        ]
       },
       {
-        "tab": "Change Logs",
-        "groups": [
+        "dropdown": "Deliberate",
+        "tabs": [
           {
-            "group": "Top 10",
-            "pages": [
-              "changelog/1-2",
-              "changelog/1-2-5",
-              "changelog/2-0"
-            ]
+            "tab": "Deliberate",
+            "hidden": true
           }
         ]
       }
