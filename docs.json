@@ -160,8 +160,19 @@
         "dropdown": "Deliberate",
         "tabs": [
           {
-            "tab": "Deliberate",
-            "hidden": true
+            "tab": "Support Center",
+            "hidden": true,
+            "groups": [
+              {
+                "group": "General Support",
+                "icon": "circle-question",
+                "pages": [
+                  "types-of-deliberations",
+                  "submit-a-deliberation",
+                  "answer-a-deliberation"
+                ]
+              }
+            ]
           }
         ]
       }
