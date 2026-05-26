@@ -7,7 +7,11 @@ description: "Cents music theory handbook covering whole and half steps, time si
 
 ## Whole Steps \+ Half Steps
 
+#### Half Steps
+
 A **half step** is represented by the letter "h" in musical formulas and delineates 1 semitone in Western Music. An example of a half step on the keyboard is **E to F** or **B to C**.
+
+#### Whole Steps
 
 A **whole step** is represented by the letter "w" in musical formulas and delineates 2 semitones in Western Music. An example of a whole step on the keyboard is **C to D** or **F to G**
 
@@ -25,17 +29,95 @@ The values of a note or rest create a ratio with one another, please view the ta
 
 The actual value of each of these depends on [Time Signatures](https://getsupport.keyninestudios.com/music-theory-handbook#time-signatures). Please review that section of the handbook to learn more about them!
 
+## Octave Numbers
+
+Every note name repeats across multiple octaves. To specify exactly which pitch you mean, we attach a number to the letter of the name.
+
+Middle C which is considered the universal reference point (shown on the staff below) is C4. This is roughly in the middle of a piano hence _middle c._
+
+<Frame>
+  <img
+    src="/images/Middle_C.png"
+    alt="Middle C"
+    title="Middle C"
+    className="mx-auto"
+    style={{ width:"41%" }}
+  />
+</Frame>
+
+The number increases by 1 each time you cross from B to C in the upward direction. So the sequence around middle C looks like:
+
+| A3 | B3 | C4 | D4 | E4 | F4 | G4 | A4 | B4 | C5 |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+
+A few useful landmarks to memorize:
+
+- C4 is Middle C
+- A4 is Concert A (The standard tuning pitch for concerts)
+
+## Beats and Measures
+
+#### The Beat
+
+**The beat** is the steady, evenly-spaced pulse that runs underneath all music — like a clock ticking, or a foot tapping. Every note and rest duration is measured against this pulse. Note values (whole, half, quarter, etc.) tell you how many beats a note lasts relative to the beat unit set by the time signature.
+
+#### Measures and Barlines
+
+Music is divided into equal chunks called **measures** (also called bars). Each measure holds exactly the same number of beats, set by the time signature. The boundaries between measures are marked by vertical lines called **barlines**.
+
+The note and rest values inside any measure must add up to exactly the number of beats required — not one beat more, not one beat less. To check a measure, add up every note and rest value inside it.
+
+#### The Double Barline
+
+A regular barline is a single thin vertical line — it simply separates two measures. A **double barline** (one thin line followed by one thick line) marks the end of the entire piece or a major section boundary.
+
+#### Pickup Measures
+
+Some pieces begin with an incomplete measure called a **pickup**. It holds fewer beats than a normal measure and leads directly into the first full measure. This is intentional — the missing beats are balanced by the final measure of the piece, which is also short. Together, the pickup and the final measure add up to one complete measure.
+
 ## Time Signatures
 
 Time signatures appear as a fraction at the beginning of a line or piece of music, examples include 4/4, 3/4, 5/8, 2/4, 12/8.
 
 The top number in the fraction represents how many beats are in each measure, for example in **4**/4 there are **4** beats per measure.
 
-The bottom number in the fraction represents which note value gets one beat, for example in 12/**8** an **eighth** note would get a beat. 
+The bottom number in the fraction represents which note value gets one beat, for example in 12/**8** an **eighth** note would get a beat.
 
 **Example:** In the time signature of 5/4, there are 5 beats per measure, and the quarter note gets one beat. In other words, there are 5 quarter notes per measure.
 
+## Simple and Compound Meter
+
+The time signature tells you how many beats are in a measure and what note gets one beat. But there's a deeper layer: **how does each beat divide?**
+
+#### Simple Meter
+
+A meter is **simple** when each beat divides into **2 equal parts**. In 4/4, the quarter-note beat splits into 2 eighth notes. In 3/4, same thing. The two-part split is what defines simple — regardless of how many beats are in the measure.
+
+Simple meters are named by their beat count:
+
+| Name | Beat Count | Common Examples |
+| :-- | :-- | :-- |
+| Simple Duple | 2 beats | 2/4, 2/2 (cut time) |
+| Simple Triple | 3 beats | 3/4, 3/8 |
+| Simple Quadruple | 4 beats | 4/4 (common time) |
+
+#### Compound Meter
+
+A meter is **compound** when each beat divides into **3 equal parts**. This gives compound meter a lilting, rolling quality. In 6/8, there are 2 felt beats — each made of 3 eighth notes. Each of those beats is a dotted quarter note long.
+
+In compound time signatures, the written top number is always a multiple of 3. **Divide it by 3 to find the number of felt beats:**
+
+| Time Signature | Top ÷ 3 | Felt Beats | Name |
+| :-- | :-- | :-- | :-- |
+| 6/8 | 6 ÷ 3 | 2 | Compound Duple |
+| 9/8 | 9 ÷ 3 | 3 | Compound Triple |
+| 12/8 | 12 ÷ 3 | 4 | Compound Quadruple |
+
+**Example:** Both contain six eighth notes per measure, but they feel completely different. In **3/4**, you feel 3 quarter-note beats, each splitting into 2 eighths. In **6/8**, you feel 2 dotted-quarter beats, each splitting into 3 eighths. Same raw material, opposite pulse. At a fast tempo, 3/4 bounces in 3 and 6/8 swings in 2.
+
 ## Clef Reading
+
+#### Treble Clef
 
 In **Treble clef**, the lines from bottom to top are **E, G, B, D, F.** The spaces are **F, A, C, E.**
 
@@ -51,6 +133,8 @@ A helpful way to remember this is the mnemonic phrase of Every Good Boy Does Fin
   />
 </Frame>
 
+#### Bass Clef
+
 In **Bass clef**, the lines from bottom to top are **G, B, D, F, A.** The spaces are **A, C, E, G.**
 
 A helpful way to remember this is the mnemonic phrase of All Cows Eat Grass for the spaces.
@@ -65,7 +149,9 @@ A helpful way to remember this is the mnemonic phrase of All Cows Eat Grass for 
   />
 </Frame>
 
-In **Alto clef**, the middle (third) line is C. This is the most helpful way to understand this clef. You can count up or down from here.  This is most likely
+#### Alto Clef
+
+In **Alto clef**, the middle (third) line is C. This is the most helpful way to understand this clef. You can count up or down from here.
 
 <Frame>
   <img
@@ -76,6 +162,52 @@ In **Alto clef**, the middle (third) line is C. This is the most helpful way to 
     style={{ width:"46%" }}
   />
 </Frame>
+
+## Key Signatures
+
+A key signature appears at the start of every staff, right after the clef. It shows a group of sharps or flats that apply to the **entire piece** — every note with that letter name, in every octave, is affected unless a written accidental overrides it in a specific measure.
+
+#### The Order of Sharps
+
+Sharps always appear in the same fixed order, no matter how many there are:
+
+**F C G D A E B**
+
+Mnemonic: **F**at **C**ats **G**o **D**own **A**lleys **E**ating **B**irds
+
+| Sharps | Notes Affected |
+| :-- | :-- |
+| 1 | F# |
+| 2 | F#, C# |
+| 3 | F#, C#, G# |
+| 4 | F#, C#, G#, D# |
+| 5 | F#, C#, G#, D#, A# |
+| 6 | F#, C#, G#, D#, A#, E# |
+| 7 | F#, C#, G#, D#, A#, E#, B# |
+
+#### The Order of Flats
+
+Flats always appear in the reverse order of sharps:
+
+**B E A D G C F**
+
+Mnemonic: **B**attle **E**nds **A**nd **D**own **G**oes **C**harles's **F**ather
+
+| Flats | Notes Affected |
+| :-- | :-- |
+| 1 | Bb |
+| 2 | Bb, Eb |
+| 3 | Bb, Eb, Ab |
+| 4 | Bb, Eb, Ab, Db |
+| 5 | Bb, Eb, Ab, Db, Gb |
+| 6 | Bb, Eb, Ab, Db, Gb, Cb |
+| 7 | Bb, Eb, Ab, Db, Gb, Cb, Fb |
+
+#### Accidentals Override the Key Signature
+
+A sharp, flat, or natural sign written directly next to a notehead overrides the key signature for that note only, for the rest of that measure. The barline at the end of the measure resets everything back to the key signature automatically.
+
+To see where this is used, view our section on [The Circle of Fifths](https://getsupport.keyninestudios.com/music-theory-handbook#circle-of-fifths)
 
 ## Musical Formulas
 
@@ -89,9 +221,13 @@ Musical formulas are a great way to construct any scale! Use the formulas below 
 
 Unlike the major and minor scales that have 7 notes, the pentatonic and blues scales have 5 and 6 notes respectively. To construct these scales, see the information below!
 
-**Pentatonic Scale:** To construct the pentatonic scale, simply use the 1 - 2 - 3 - 5 - 6 scale degrees. 
+#### Pentatonic Scale
 
-**Blues Scale:** To construct the blues scale, simply use the 1 - 3b - 4 - 5b - 5 - 7 scale degrees.
+To construct the pentatonic scale, simply use the 1 - 2 - 3 - 5 - 6 scale degrees.
+
+#### Blues Scale
+
+To construct the blues scale, simply use the 1 - 3b - 4 - 5b - 5 - 7 scale degrees.
 
 To learn more about scale degrees, please visit the handbook section, [scale degrees](https://getsupport.keyninestudios.com/music-theory-handbook#scale-degrees).
 
