@@ -9,7 +9,7 @@
   },
   "favicon": "/icons/favicon.ico",
   "banner": {
-        "content": "🛠️ This documentation is still being ported over from our old server. Please be patient.",
+        "content": "🛠️ Any version below 2.0 is no longer supported by our support center. Please update your app.",
         "dismissible": true
     },
   "appearance": {
