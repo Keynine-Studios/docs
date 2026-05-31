@@ -33,6 +33,12 @@
             ]
           },
           {
+            "tab": "Blog",
+            "pages": [
+              "version-support-update"
+            ]
+          },
+          {
             "tab": "Change Logs",
             "groups": [
               {
@@ -44,12 +50,6 @@
                   "changelog/2-1"
                 ]
               }
-            ]
-          },
-          {
-            "tab": "Blog",
-            "pages": [
-              "version-support-update"
             ]
           }
         ]
