@@ -45,6 +45,12 @@
                 ]
               }
             ]
+          },
+          {
+            "tab": "Blog",
+            "pages": [
+              "version-support-update"
+            ]
           }
         ]
       },
