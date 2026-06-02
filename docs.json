@@ -188,13 +188,15 @@
         "dropdown": "Clip",
         "tabs": [
           {
-            "tab": "Support Center"
-          },
-          {
-            "tab": "Our Policies",
-            "icon": "book",
-            "pages": [
-              "privacy-policy-1"
+            "tab": "Support Center",
+            "groups": [
+              {
+                "group": "Our Policies",
+                "icon": "book",
+                "pages": [
+                  "privacy-policy-1"
+                ]
+              }
             ]
           }
         ]
