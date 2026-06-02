@@ -193,7 +193,9 @@
               {
                 "group": "Our Policies",
                 "icon": "book",
-                "pages": []
+                "pages": [
+                  "privacy-policy-clip"
+                ]
               }
             ]
           }
