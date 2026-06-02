@@ -193,9 +193,7 @@
               {
                 "group": "Our Policies",
                 "icon": "book",
-                "pages": [
-                  "privacy-policy-1"
-                ]
+                "pages": []
               }
             ]
           }
