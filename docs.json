@@ -191,6 +191,13 @@
             "tab": "Support Center",
             "groups": [
               {
+                "group": "General Support",
+                "icon": "question-circle",
+                "pages": [
+                  "coming-soon"
+                ]
+              },
+              {
                 "group": "Our Policies",
                 "icon": "book",
                 "pages": [
