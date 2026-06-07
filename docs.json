@@ -9,7 +9,7 @@
   },
   "favicon": "/icons/favicon.ico",
   "banner": {
-        "content": "🛠️ [Any version below 2.0 is no longer supported by our support center. Please update your app.](https://getsupport.keyninestudios.com/version-support-update)",
+        "content": "🛠️ [Any version below 2.0 of Top 10! is no longer supported by our support center. Please update your app.](https://getsupport.keyninestudios.com/version-support-update)",
         "dismissible": true
     },
   "appearance": {
