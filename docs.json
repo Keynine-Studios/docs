@@ -194,14 +194,14 @@
                 "group": "General Support",
                 "icon": "question-circle",
                 "pages": [
-                  "coming-soon"
+                  "clip/coming-soon"
                 ]
               },
               {
                 "group": "Our Policies",
                 "icon": "book",
                 "pages": [
-                  "privacy-policy-clip"
+                  "clip/privacy-policy"
                 ]
               }
             ]
